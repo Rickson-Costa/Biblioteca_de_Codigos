@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot GIT</title>
+    <style>
+        #chat-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #chat-box {
+            overflow-y: scroll;
+            height: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="chat-box">
+        <div id="chat-container">{{perg}}</div>
+    </div>
+
+    <div id="chat-container">
+        <div id="chat-box">
+        {% for line in data %}
+            <li>{{line|safe}}</li>
+        {% endfor %}</div>
+        <form id="chat-form" action="/" method="POST">
+            <input type="text" name="P1" id="P1" placeholder="Digite sua pergunta..." /><br>
+            <input class="button" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
