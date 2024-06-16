@@ -1,0 +1,21 @@
+ Nome de quem ligou: Rickson
+ Ramal: 4002
+ Setor: T.I
+ Foi realizado o chamado: SIM
+ Qual a solicitação: Não quero saber de nada
+
+
+ Nome de quem ligou: Rickson Henrique Alves Masculino Costa
+ Setor: ti
+ Ramal: 400
+ Foi realizado o chamado: sim
+ Qual a solicitação: tudso
+
+
+ Nome de quem ligou: rickson
+ Setor: t.i
+ Ramal: 1234
+ Foi realizado o chamado: sim
+ Qual a solicitação: edfghjerfgbhnrftgyui
+
+

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.input_form {
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+
+.foto_small {
+    height: 40px;
+    width: 40px;
+}
+
+.span_nome {
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+}
+
+.input_form input {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav {
+    background-color: black;
+    width: 200px;
+    height: 883px;
+    padding: 20px;
+}
+
+.nav_item {
+    list-style: none;
+}
+
+.nav_item li {
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+.nav_item a {
+    text-decoration:none ;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.container {
+    background-color: #fff;
+    flex: 1;
+    padding: 40px 40px 80px 50px;
+    transform: all 0.5s;
+    width: 990px;
+}
+
+.container_title {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container_title h2 {
+    color: #000;
+    font-size: 200%;
+    float: left;
+}
+
+.container_main {
+    background-color: #c9c9c9;
+    padding: 15px 15px 15px;
+}
+
+.area_main { 
+    
+}
+
+.filter {
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.input_submmit {
+    padding: 5px 15px 5px 15px;
+}
+
+.input_search {
+    padding: 7px;
+}

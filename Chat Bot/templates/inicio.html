@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot HNL</title>
+</head>
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='main.css')}}" />
+
+<body tema>
+    <h1>HNL TI</h1>
+   
+    <form action="{{ url_for('consultar_setor') }}" method="post">
+        <button class="button" type="submit">Ramais</button>
+    </form>
+
+    <p></p>
+
+    <form action="{{ url_for('chatbot') }}" method="post">
+        <button class="button" type="submit">Chat Bot</button>
+    </form>
+
+</body>
+</html>

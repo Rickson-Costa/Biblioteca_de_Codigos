@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='main.css')}}" />
+        <title>Chatbot HNL</title>
+    <style>
+        #chat-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #chat-box {
+            overflow-y: scroll;
+            height: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body class="tema_verde">
+    <div id="chat-box">
+        <div id="chat-container"></div>
+    {% if resposta is not none %}
+        <pre>{{ data }}</pre>
+    {% endif %}
+</div>
+    </div>
+
+    <div id="chat-container">
+        <div id="chat-box"></div>
+            <form id="chat-form" action="{{ url_for('chatbot') }}" method="POST">
+            <input type="text" name="P1" id="P1" placeholder="Sua pergunta aqui" />
+            <input type="submit" value="Enviar">
+</form>
+
+    </div>
+</body class="tema_verde">
+</html>

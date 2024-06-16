@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='main.css')}}" />
+    <title>Chatbot HNL</title>
+</head>
+
+<body class="tema_verde">
+    <h1>HNL TI</h1>
+
+    <!-- Chat Interface -->
+    <div id="chat-ramal">
+        <div id="chat"></div>
+        <form id="chat-form" action="{{ url_for('consultar_setor') }}" method="POST">
+            <input type="text" name="PR1" id="PR1" placeholder="Qual setor você deseja consultar o ramal: " /><br>
+            <input class="button" type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <!-- Ramal Response Section -->
+<div id="ramal-resposta">
+    {% if ramal is not none %}
+        <pre>{{ ramal }}</pre>
+    {% endif %}
+</div>
+
+
+<div id="ramal-resposta">
+    {% if resposta is not none %}
+        <pre>{{ resposta }}</pre>
+    {% endif %}
+</div>
+
+</body class="tema_verde">
+</html>
