@@ -1,0 +1,31 @@
+Dar permissão de grupo:
+
+	sudo chown -R www-data:www-data /home/apache/Sistema_RH/
+
+Dar permissão de leitura, escrita e execução:
+
+	chmod -R a+rwx /caminho/do/seu/diretorio/static
+
+Apagar texto de um arquivo:
+	sudo truncate -s 0 /var/log/nginx/error.log
+
+Verifica ultimas 50 linhas:
+	tail -n 50 /var/log/nginx/error.log
+
+Verificar o que está na porta:
+	sudo netstat -tuln | grep 8000
+
+Verificar se o serviço está ativo:
+	ps aux | grep gunicorn
+
+Iniciar o Gunicorn em modo oculto e enviar os logs pra um arquivo especificado:
+	nohup gunicorn dados_rh.wsgi:application --bind 0.0.0.0:8000 > gunicorn.log 2>&1 &
+	nohup gunicorn sistema_de_login.wsgi:application --bind 0.0.0.0:8000 > gunicorn.log 2>&1 &
+Verificar o nginx:
+	sudo nginx -t
+
+Dar permissão Full:
+	sudo chmod -R 777 /home/assinaturadigital/
+
+Adcionar grupo:
+	sudo usermod -a -G assinaturadigital www-data
